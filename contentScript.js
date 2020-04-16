@@ -8,10 +8,11 @@ if (!localstorage_hold){
 }
 
 if (matchDomain('rep.repubblica.it')) {
-    if (window.location.href.includes('/pwa/')) {
-        window.location.href = window.location.href.replace('/pwa/', '/ws/detail/');
+    if (location.href.includes('/pwa/')) {
+        setTimeout(function () {
+            window.location.href = window.location.href.replace('/pwa/', '/ws/detail/');
+        }, 400);
     }
-
     if (window.location.href.includes('/ws/detail/')) {
         const paywall = document.querySelector('.paywall[subscriptions-section="content"]');
         if (paywall) {
@@ -67,7 +68,7 @@ if (matchDomain('telegraaf.nl')) {
     }
 }
 
-if (matchDomain(['ad.nl', 'ed.nl']) {
+if (matchDomain(['ad.nl', 'ed.nl'])) {
     let paywall = document.querySelector('.article__component.article__component--paywall-module-notification');
     removeDOMElement(paywall);
 }
@@ -168,7 +169,7 @@ if (matchDomain('afr.com')) {
     });
 }
 
-if (matchDomain(['parool.nl', 'trouw.nl', 'volkskrant.nl', 'demorgen.be']) {
+if (matchDomain(['parool.nl', 'trouw.nl', 'volkskrant.nl', 'demorgen.be'])) {
     document.addEventListener('DOMContentLoaded', () => {
         const paywall = document.querySelector('div[data-temptation-position="ARTICLE_BOTTOM"]');
         const hidden_section = document.querySelector('div[data-temptation-position="ARTICLE_INLINE"]');
@@ -246,7 +247,7 @@ if (matchDomain('theglobeandmail.com')) {
     });
 }
 
-if (matchDomain(['examiner.com.au', 'thecourier.com.au', 'theadvocate.com.au']) {
+if (matchDomain(['examiner.com.au', 'thecourier.com.au', 'theadvocate.com.au'])) {
   const subscribe_truncate = document.querySelector('.subscribe-truncate');
   if (subscribe_truncate)
       subscribe_truncate.classList.remove('subscribe-truncate');
@@ -285,13 +286,18 @@ if (matchDomain('canberratimes.com.au')) {
     }
 }
 
+if (matchDomain('asia.nikkei.com')) {
+    const cookie_banner = document.querySelector('.pw-widget');
+    removeDOMElement(cookie_banner);
+}
+
 if (matchDomain('ledevoir.com')) {
         const counter = document.querySelector('.full.hidden-print.popup-msg');
         removeDOMElement(counter);
 }
 
 if (matchDomain('ft.com')) {
-    const cookie_banner = document.querySelector('.n-messaging-banner__outer');
+    const cookie_banner = document.querySelector('.cookie-banner');
     removeDOMElement(cookie_banner);
 }
 
@@ -304,6 +310,12 @@ if (matchDomain('nytimes.com')) {
     const preview_button = document.querySelector('.css-3s1ce0');
         if (preview_button)
             preview_button.click();
+}
+
+if (matchDomain('technologyreview.com')) {
+    // The class of banner is like 'overlayFooter__wrapper--3DhFn', which is hard to select exactly
+    const subscribeBanner = document.querySelector('[class*=overlayFooter__wrapper]');
+    removeDOMElement(subscribeBanner);
 }
 
 if (matchDomain('leparisien.fr')) {
