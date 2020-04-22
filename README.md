@@ -1,4 +1,8 @@
-# Bypass Paywalls browser extension
+<p align="center">
+  <img src="https://github.com/iamadamdev/bypass-paywalls-chrome/blob/master/src/icons/bypass.png" width="75" height="75"/>
+</p>
+
+<h1 align="center">Bypass Paywalls</h1>
 
 ### Installation Instructions
 **Google Chrome**
@@ -55,6 +59,7 @@
 [Harper's Magazine](https://harpers.org)\
 [Hartford Courant](https://www.courant.com)\
 [Harvard Business Review](https://www.hbr.org)\
+[Herald Sun](https://www.heraldsun.com.au)\
 [Het Financieel Dagblad](https://fd.nl)\
 [Inc.com](https://www.inc.com)\
 [Investors Chronicle](https://www.investorschronicle.co.uk)\
@@ -65,7 +70,6 @@
 [La Stampa](https://www.lastampa.it)\
 [La Tercera](https://www.latercera.com)\
 [Le Devoir](https://www.ledevoir.com)\
-[Le Monde](https://www.lemonde.fr)\
 [Le Parisien](http://www.leparisien.fr)\
 [Les Échos](https://www.lesechos.fr)\
 [Loeb Classical Library](https://www.loebclassics.com)\
@@ -77,6 +81,7 @@
 [Mexicon News Daily](https://mexiconewsdaily.com)\
 [Mountain View Voice](https://www.mv-voice.com)\
 [NRC Handelsblad](https://www.nrc.nl)\
+[NT News](https://www.ntnews.com.au)\
 [National Post](https://www.nationalpost.com)\
 [New York Magazine](https://www.nymag.com)\
 [New Zealand Herald](https://www.nzherald.co.nz)\
@@ -96,6 +101,7 @@
 [SunSentinel](https://www.sun-sentinel.com)\
 [Tech in Asia](https://www.techinasia.com)\
 [Telegraaf](https://www.telegraaf.nl)\
+[The Advertiser](https://www.adelaidenow.com.au)\
 [The Advocate](https://www.theadvocate.com.au)\
 [The Age](https://www.theage.com.au)\
 [The American Interest](https://www.the-american-interest.com)\
@@ -107,6 +113,7 @@
 [The Business Journals](https://www.bizjournals.com)\
 [The Canberra Times](https://www.canberratimes.com.au)\
 [The Courier](https://www.thecourier.com.au)\
+[The Courier Mail](https://www.couriermail.com.au)\
 [The Daily Telegraph](https://www.dailytelegraph.com.au)\
 [The Diplomat](https://www.thediplomat.com)\
 [The Economist](https://www.economist.com)\
@@ -175,6 +182,3 @@ Usually premium articles cannot be bypassed as they are behind a hard paywall.
 
 ### Show your support
 * I am not asking for donations or anything like that, all I ask is that you star this repo.
-
-### License
-Bypass Paywalls is [MIT-licensed](https://github.com/iamadamdev/bypass-paywalls-chrome/blob/master/LICENSE).

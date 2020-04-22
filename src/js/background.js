@@ -1,5 +1,3 @@
-/* Please respect alphabetical order when adding a site in any list */
-
 'use strict';
 
 const restrictions = {
@@ -23,7 +21,6 @@ const allow_cookies = [
 'ft.com',
 'harpers.org',
 'hbr.org',
-'lemonde.fr',
 'lesechos.fr',
 'lrb.co.uk',
 'medium.com',
@@ -124,13 +121,16 @@ const remove_cookies_select_drop = {
 
 // Override User-Agent with Googlebot
 const use_google_bot = [
+'adelaidenow.com.au',
 'barrons.com',
+'couriermail.com.au',
 'dailytelegraph.com.au',
 'fd.nl',
 'haaretz.co.il',
 'haaretz.com',
-'lemonde.fr',
+'heraldsun.com.au',
 'mexiconewsdaily.com',
+'ntnews.com.au',
 'nytimes.com',
 'quora.com',
 'seekingalpha.com',
@@ -459,7 +459,7 @@ extension_api.webRequest.onCompleted.addListener(function(details) {
   urls: ["<all_urls>"]
 });
 
-// Google Analytics to track DAU
+// Google Analytics to track DAU (Chrome only)
 function init_GA() {
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-69824169-2']);

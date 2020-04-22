@@ -1,12 +1,3 @@
-const extension_api =
-    (typeof browser === 'object' &&
-     typeof browser.runtime === 'object' &&
-     typeof browser.runtime.getManifest === 'function') ? browser :
-    (typeof chrome === 'object' &&
-     typeof chrome.runtime === 'object' &&
-     typeof chrome.runtime.getManifest === 'function') ? chrome :
-    console.log('Cannot find extension_api under namespace "browser" or "chrome"');
-
 // Cookies from this list are blocked by default
 const defaultSites = {
     'Adweek': 'adweek.com',
@@ -46,6 +37,7 @@ const defaultSites = {
     'Harper\'s Magazine': 'harpers.org',
     'Hartford Courant': 'courant.com',
     'Harvard Business Review': 'hbr.org',
+    'Herald Sun': 'heraldsun.com.au',
     'Het Financieele Dagblad': 'fd.nl',
     'Inc.com': 'inc.com',
     'Investors Chronicle': 'investorschronicle.co.uk',
@@ -55,7 +47,6 @@ const defaultSites = {
     'La Tercera': 'latercera.com',
     'L\'Echo': 'lecho.be',
     'Le Devoir': 'ledevoir.com',
-    'Le Monde': 'lemonde.fr',
     'Le Parisien': 'leparisien.fr',
     'Les Echos': 'lesechos.fr',
     'Loeb Classical Library': 'loebclassics.com',
@@ -73,6 +64,7 @@ const defaultSites = {
     'New Zealand Herald': 'nzherald.co.nz',
     'Nikkei Asian Review': 'asia.nikkei.com',
     'NRC': 'nrc.nl',
+    'NT News': 'ntnews.com.au',
     'Orange County Register': 'ocregister.com',
     'Orlando Sentinel': 'orlandosentinel.com',
     'Palo Alto Online': 'paloaltoonline.com',
@@ -88,6 +80,7 @@ const defaultSites = {
     'SunSentinel': 'sun-sentinel.com',
     'Tech in Asia': 'techinasia.com',
     'Telegraaf': 'telegraaf.nl',
+    'The Advertiser': 'adelaidenow.com.au',
     'The Advocate': 'theadvocate.com.au',
     'The Age': 'theage.com.au',
     'The American Interest': 'the-american-interest.com',
@@ -99,6 +92,7 @@ const defaultSites = {
     'The Business Journals': 'bizjournals.com',
     'The Canberra Times': 'canberratimes.com.au',
     'The Courier': 'thecourier.com.au',
+    'The Courier Mail': 'couriermail.com.au',
     'The Daily Telegraph': 'dailytelegraph.com.au',
     'The Diplomat': 'thediplomat.com',
     'The Economist': 'economist.com',
